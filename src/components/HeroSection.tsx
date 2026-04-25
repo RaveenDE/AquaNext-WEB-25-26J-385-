@@ -14,15 +14,15 @@ export default function HeroSection() {
       <div className={`container ${styles.content}`}>
         <span className={styles.badge}>
           <Microscope size={14} style={{ display: "inline", verticalAlign: "text-bottom", marginRight: "6px" }} />
-          SLIIT Research Project 2025
+          SLIIT Research Project 2025-2026
         </span>
         <h1 className={styles.title}>
-          AquaNext — AI-Driven<br />
-          <span className={styles.highlight}>Smart Shrimp Farming</span>
+          AquaNext — AI-Powered<br />
+          <span className={styles.highlight}>Smart Aquaculture</span>
         </h1>
         <p className={styles.subtitle}>
-          Leveraging artificial intelligence, IoT analytics, and computer vision to revolutionize 
-          sustainable aquaculture management — from water quality prediction to automated disease detection.
+          Revolutionising Sri Lankan shrimp farms with real-time water quality monitoring, 
+          smart AI feeding, disease detection, and an intelligent assistant.
         </p>
         <div className={styles.actions}>
           <a href="#project-scope" className={styles.primaryBtn}>
@@ -47,7 +47,7 @@ export default function HeroSection() {
           </div>
           <div className={styles.statDivider} />
           <div className={styles.stat}>
-            <span className={styles.statNumber}>2025</span>
+            <span className={styles.statNumber}>2025-2026</span>
             <span className={styles.statLabel}>Academic Year</span>
           </div>
         </div>
