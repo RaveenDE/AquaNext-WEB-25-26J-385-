@@ -1,34 +1,30 @@
 import styles from "./ProjectScope.module.css";
-import { Droplets, ShieldAlert, Utensils, BarChart3 } from "lucide-react";
+import { Droplets, ShieldAlert, Utensils, Bot } from "lucide-react";
 
 const scopeItems = [
   {
     icon: <Droplets size={40} />,
-    title: "Water Quality Prediction",
+    title: "Water Quality Monitoring",
     description:
-      "Real-time prediction of pH, dissolved oxygen, and temperature using LSTM deep learning models integrated with IoT sensors.",
-    researcher: "Component 1",
-  },
-  {
-    icon: <ShieldAlert size={40} />,
-    title: "Disease Detection",
-    description:
-      "Automated detection of White Spot Syndrome Virus (WSSV) and other shrimp diseases through advanced computer vision and CNN architectures.",
-    researcher: "Component 2",
+      "pH, oxygen, ammonia, temperature—24/7 real-time monitoring with instant alerts.",
   },
   {
     icon: <Utensils size={40} />,
-    title: "Feed Optimization",
+    title: "Automated Feed System",
     description:
-      "AI-driven feed management system that minimizes waste and optimizes feeding schedules for sustainable aquaculture practices.",
-    researcher: "Component 3",
+      "AI-powered feeding reduces waste by up to 50% and optimises schedules for growth.",
   },
   {
-    icon: <BarChart3 size={40} />,
-    title: "Growth Analytics",
+    icon: <ShieldAlert size={40} />,
+    title: "Disease Identifier",
     description:
-      "Comprehensive growth tracking and predictive analytics dashboard for monitoring shrimp biomass and farm productivity metrics.",
-    researcher: "Component 4",
+      "Early AI detection of diseases and pathogens—95% accuracy before visible symptoms.",
+  },
+  {
+    icon: <Bot size={40} />,
+    title: "AI Agent",
+    description:
+      "Your intelligent assistant providing insights, recommendations, and automations.",
   },
 ];
 
@@ -49,9 +45,12 @@ export default function ProjectScope() {
           {scopeItems.map((item, i) => (
             <div key={item.title} className={styles.card} style={{ animationDelay: `${i * 0.1}s` }}>
               <div className={styles.cardIcon}>{item.icon}</div>
-              <div className={styles.cardBadge}>{item.researcher}</div>
               <h3 className={styles.cardTitle}>{item.title}</h3>
               <p className={styles.cardDesc}>{item.description}</p>
+              <a href="#" className={styles.learnMore}>
+                Learn more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
               <div className={styles.cardLine} />
             </div>
           ))}
@@ -71,15 +70,15 @@ export default function ProjectScope() {
           </div>
           <div className={styles.problemStats}>
             <div className={styles.problemStat}>
-              <span className={styles.problemStatNum}>$3B+</span>
-              <span className={styles.problemStatLabel}>Annual Global Losses</span>
+              <span className={styles.problemStatNum}>24/7</span>
+              <span className={styles.problemStatLabel}>Real-Time Monitoring</span>
             </div>
             <div className={styles.problemStat}>
-              <span className={styles.problemStatNum}>40%</span>
-              <span className={styles.problemStatLabel}>Disease-related Loss</span>
+              <span className={styles.problemStatNum}>95%</span>
+              <span className={styles.problemStatLabel}>Disease Det. Accuracy</span>
             </div>
             <div className={styles.problemStat}>
-              <span className={styles.problemStatNum}>30%</span>
+              <span className={styles.problemStatNum}>50%</span>
               <span className={styles.problemStatLabel}>Feed Waste Reduction</span>
             </div>
           </div>
